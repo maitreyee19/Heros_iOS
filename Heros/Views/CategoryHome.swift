@@ -14,8 +14,9 @@ struct CategoryHome: View {
     var body: some View {
         NavigationView {
             List {
+
                 ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
-                    Text(key)
+                    CategoryRow(categoryName: key, items: modelData.categories[key]!)
                 }
             }
             .navigationTitle("Featured")

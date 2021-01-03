@@ -34,7 +34,7 @@
     {
         "name": "Ariel",
         "category": "Princess",
-        "story": "he Little Mermaid",
+        "story": "The Little Mermaid",
         "channel": "Disney",
         "id": 1003,
         "isFeatured": false,
@@ -147,7 +147,7 @@
         "name": "AJ Gadgets",
         "category": "Educational",
         "story": "Hero Elementary",
-        "channel": ":PBS Kids",
+        "channel": "PBS Kids",
         "id": 1010,
         "isFeatured": false,
         "isFavorite": false,

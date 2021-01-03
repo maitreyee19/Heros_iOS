@@ -18,9 +18,9 @@ struct Hero: Hashable, Codable ,Identifiable{
     
     var category: Category
     enum Category: String, CaseIterable, Codable {
-        case lakes = "Super Hero"
-        case rivers = "Educational"
-        case mountains = "Princess"
+        case superHero = "Super Hero"
+        case educational = "Educational"
+        case princess = "Princess"
     }
     
     private var imageName: String
