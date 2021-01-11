@@ -23,7 +23,7 @@ struct CategoryHome: View {
                         }
                     }
                 }
-                .navigationTitle("Kids Characters")
+                .navigationTitle("Princess")
             }
         }
     }

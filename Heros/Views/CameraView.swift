@@ -10,24 +10,26 @@ import SwiftUI
 struct CameraView: View {
     @State private var showSheet:Bool = false
     @State private var showImagePicker = false
+    @State private var charactorName = ""
     @State private var image:UIImage  = UIImage(systemName:"camera.on.rectangle")!
     @State private var sourceType :UIImagePickerController.SourceType = .camera
     
     
     var body: some View {
         
-        VStack{
+        HStack{
             Button(action:{
                 self.showSheet = true
-                print("choose picket button clicked")
             }){
                 VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 10) {
-                    Image(uiImage: image)
+                    HStack{
+                        Image(uiImage: image)
                         .renderingMode(.original)
                         .resizable()
                         .frame(width: 120, height: 100)
                         .cornerRadius(5)
-                    Text("Choose Picture to find the character.")
+                    }
+                    Text("Select Picture")
                 }
             }
             .actionSheet(isPresented: $showSheet, content:{
@@ -45,8 +47,12 @@ struct CameraView: View {
                                             .cancel()])}
             )
             .sheet(isPresented: $showImagePicker, content: {
-                ImagePicker(image: self.$image, sourceType: self.sourceType , showModal: self.$showImagePicker)
+                ImagePicker(image: self.$image, sourceType: self.sourceType , showModal: self.$showImagePicker , prediction: $charactorName)
             })
+            
+            if(charactorName != ""){
+                SelectedItem(heroName: self.charactorName)
+            }
         }
     }
 }

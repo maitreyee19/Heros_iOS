@@ -23,7 +23,6 @@ struct ContentView
         TabView(selection: $selection){
             CategoryHome().tabItem { Label("Featured",systemImage:"star") }.tag(Tab.featured)
             HeroList().tabItem { Label("List",systemImage : "list.bullet") }.tag(Tab.list)
-//            CameraView().tabItem { Label("Photo",systemImage : "camera.on.rectangle").tag(Tab.photo) }
             
         }
     }

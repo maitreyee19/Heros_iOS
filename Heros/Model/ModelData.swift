@@ -9,7 +9,27 @@ import Foundation
 import Combine
 
 final class ModelData: ObservableObject {
-    @Published var heros: [Hero] = load("landmarkData.json")
+    @Published var heros: [Hero] = []
+    
+    let apiClient = APIClient()
+    var cancellationToken: AnyCancellable?
+    
+    init(){
+        print("api data going to be loaded")
+        heros = load("landmarkData.json")
+        
+//        guard let components = URLComponents(url: URL(string: "https://heroapp.s3-us-west-1.amazonaws.com/heros.json")!, resolvingAgainstBaseURL: true)
+//        else { fatalError("Couldn't create URLComponents") }
+//        
+//        
+//        let request = URLRequest(url: components.url!)
+//        cancellationToken = apiClient.run(request)
+//            .map(\.value)
+//            .sink(receiveCompletion: { _ in },
+//                  receiveValue: {
+//                    self.heros = $0
+//                  })
+    }
     
     var categories: [String: [Hero]] {
         Dictionary(
@@ -18,6 +38,8 @@ final class ModelData: ObservableObject {
         )
     }
 }
+
+
 
 
 
