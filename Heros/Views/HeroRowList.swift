@@ -32,6 +32,7 @@ struct HeroList: View {
             }
             .navigationTitle("Your Heros")
         }
+        .navigationViewStyle(StackNavigationViewStyle())
         
         
     }

@@ -15,6 +15,7 @@ struct Hero: Hashable, Codable ,Identifiable{
     var channel: String
     var description: String
     var isFavorite: Bool
+    var link : String
     
     var category: Category
     enum Category: String, CaseIterable, Codable {

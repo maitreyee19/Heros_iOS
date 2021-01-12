@@ -21,9 +21,6 @@ struct HeroDetailView: View {
         VStack {
             CircleImage(image: hero.image);
             ScrollView() {
-//                Text(hero.name)
-//                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-//                    .foregroundColor(/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/)
                 HStack {
                     Text(hero.name)
                         .font(.title)
@@ -40,7 +37,10 @@ struct HeroDetailView: View {
                 Divider()
                 Text("About \(hero.name)")
                     .font(.title2)
+                Button("Disney Link") {UIApplication.shared.open(URL(string: hero.link)!)}
                 Text(hero.description)
+                    .font(.system(size: 30, weight: .light, design: .serif))
+                        .italic()
             }
             .padding()
         }

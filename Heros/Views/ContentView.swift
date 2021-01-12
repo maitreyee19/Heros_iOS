@@ -25,11 +25,14 @@ struct ContentView
             HeroList().tabItem { Label("List",systemImage : "list.bullet") }.tag(Tab.list)
             
         }
+        .padding(.horizontal)
     }
 }
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            .environmentObject(ModelData())
+        Group {
+            ContentView()
+                .environmentObject(ModelData())
+        }
     }
 }

@@ -14,7 +14,12 @@ struct SelectedItem: View {
     var image = UIImage(systemName:"arrowshape.zigzag.right.fill")!
     
     var hero: Hero {
-        heroData.heros.filter({ $0.name == heroName })[0]
+        let heros:Array<Hero>  = heroData.heros.filter({ $0.name == heroName })
+        if(heros.count > 0 ) {
+            return heros[0]
+        }else{
+            return heroData.heros[0]
+        }
     }
     var body: some View {
         HStack{

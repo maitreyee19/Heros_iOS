@@ -29,7 +29,7 @@ class ImagePickerCoordinator: NSObject , UINavigationControllerDelegate , UIImag
             let config = MLModelConfiguration()
             config.computeUnits = .all
             do{
-                let heroModel = try PrincessClassfier(configuration: config)
+                let heroModel = try PrincessClassfier_v1(configuration: config)
                 if let pixelBuffer = image.toCVPixelBuffer(){
                     let heroPrediction = try heroModel.prediction(image: pixelBuffer)
                     self.prediction = heroPrediction.classLabel

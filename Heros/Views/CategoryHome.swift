@@ -20,11 +20,14 @@ struct CategoryHome: View {
                     List {
                         ForEach(modelData.categories.keys.sorted(), id: \.self) { key in
                             CategoryRow(categoryName: key, items: modelData.categories[key]!)
+                                .padding(.leading,0)
                         }
+                        
                     }
                 }
                 .navigationTitle("Princess")
             }
+            .navigationViewStyle(StackNavigationViewStyle())
         }
     }
 }
