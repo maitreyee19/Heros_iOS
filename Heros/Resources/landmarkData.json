@@ -25,7 +25,7 @@
         "link": "https://princess.disney.com/aurora",
         "details": "https://disneyprincess.fandom.com/wiki/Sleeping_Beauty",
         "description": "Aurora is the titular protagonist of the film Sleeping Beauty, based on the classic fairy tale involving a beautiful princess, a sleeping enchantment, and a handsome prince. Aurora is sixteen years old. Mary Costa provides the voice/singing voice for Aurora, giving her a British accent. The original story is much darker than the Disney version. It is Italian and involves her falling under a spell after getting a splinter, and the rest is too grim to put on here. Disney based theirs off the French version, which was based on the Italian version. Aurora has the distinction of being both the Princess with the least amount of screen time and singing more of her lines than speaking them. Aurora has the purest pedigree of any Disney Princess, being the first and only child of a king (King Stefan) and also presumably marries Prince Phillip, the firstborn son, and heir of a king (King Hubert).",
-        "imageName": "Aurora",
+        "imageName": "Aurora"
     },
     
     {
@@ -39,12 +39,12 @@
         "link": "https://princess.disney.com/belle",
         "details": "https://disneyprincess.fandom.com/wiki/Beauty_and_the_Beast",
         "description": "Belle is the fifth Disney princess and the female protagonist of the film Beauty and the Beast and its two sequels. Paige O'Hara provides the voice/singing voice of Belle in all three films. Belle is the first Disney Princess to have a confirmed country in the movie (France) while most princesses have hints of their home countries. Belle is seventeen years old and the second Disney Princess to be of common birth. When she marries Prince Adam (a Prince Regnant of his principality), she becomes a Princess Consort",
-        "imageName": "Belle",
+        "imageName": "Belle"
     },
     
     {
-        "name": "cinderella",
-        "category": "Princess(UnOfficial)",
+        "name": "Cinderella",
+        "category": "Princess-UnOfficial",
         "story": "Cinderella",
         "channel": "Disney",
         "id": 1004,
@@ -53,13 +53,13 @@
         "link": "https://princess.disney.com/cinderella",
         "details": "https://disneyprincess.fandom.com/wiki/Cinderella_(1950_film)",
         "description": "Cinderella is the titular protagonist of her eponymous film and two sequels and is the second Disney Princess. She is based on the European fairy tale of the same name, of which several variations exist. It is based on the French version. Ilene Woods provides the voice/singing voice for Cinderella (Original Disney version), Jennifer Hale provides the voice of Cinderella in the sequels, Tami Tappan provides Cinderella's singing voice in Cinderella III. Cinderella is the first Disney Princess to have siblings (albeit step-siblings) and is 19 years old. Cinderella is the first Disney Princess who is married into royalty (she marries Prince Charming).",
-        "imageName": "Cinderella",
+        "imageName": "Cinderella"
     },
     
     
     {
         "name": "Jasmine",
-        "category": "Princess(UnOfficial)",
+        "category": "Princess-UnOfficial",
         "story": "Aladdin",
         "channel": "Disney",
         "id": 1005,
@@ -68,7 +68,7 @@
         "link": "https://princess.disney.com/jasmine",
         "details": "https://disneyprincess.fandom.com/wiki/Aladdin",
         "description": "Jasmine is the deuteragonist of Aladdin, its two sequels, and the television series. Linda Larkin provides Jasmine's voice in all animated iterations of Aladdin, Lea Solanga provides the singing voice for Jasmine in the original Aladdin, Liz Callaway provides the singing voice for Jasmine in the sequels. Jasmine is the daughter (and only child) of the Sultan of Agrabah, the traditional title styled \"Shahzadi Sultana\" (Princess). When she marries Aladdin, a commoner (the son of the self-styled \"King of Thieves\" notwithstanding), he gains the title, Prince Consort. Upon the death or abdication of her father in favor of Aladdin (as was stated to be the Sultan's wish), Aladdin would become the Sultan of Agrabah and Jasmine would acquire the title of Sultana. She is the first princess to not be the titular character in her film and is the first non-white and the first Middle Eastern/southwest Asian princess.",
-        "imageName": "Jasmine",
+        "imageName": "Jasmine"
     },
     
     {
@@ -82,7 +82,7 @@
         "link": "https://princess.disney.com/merida",
         "details": "https://disneyprincess.fandom.com/wiki/Brave",
         "description": "Merida is the protagonist of the Disney/Pixar film Brave, making her the first Pixar Princess. She is the first princess since Ariel to have red hair: she has long, curly, red hair and blue eyes. Kelly MacDonald and Julie Fowlis provide the voice and singing voice for Merida. Merida is a Princess by blood; firstborn of King Fergus of DunBroch. Her lack of romantic interest (and lack of any sequels) makes it unlikely that she will rise to rule the kingdom as a Regnant Queen, considering the views of gender equality in the era.",
-        "imageName": "Merida",
+        "imageName": "Merida"
     },
     
     {
@@ -101,7 +101,7 @@
     
     {
         "name": "Mulan",
-        "category": "FormerPrincess",
+        "category": "Princess-Former",
         "story": "Mulan",
         "channel": "Disney",
         "id": 1008,
@@ -110,12 +110,12 @@
         "link": "https://princess.disney.com/mulan",
         "details" : "https://disneyprincess.fandom.com/wiki/Mulan_(1998_film)",
         "description": "Fa Mulan is the titular protagonist in the Disney film Mulan and its sequel Mulan II. She is the first Disney Princess to be based on a legend and the second not to be based on a fairy tale (Pocahontas). Ming-Na Wen and Lea Salonga provide the voice and singing voice of Mulan in both films, respectively. Mulan is (to date) the only Disney Princess who does not hold the title of Princess in one form or another. However, she does earn the non-noble title of Imperial Consul. Her eventual marriage to General Li Shang (also non-noble) does not grant her any titles either. Mulan and Shang are the only non-royal Disney couple in the Disney Princess franchise.",
-        "imageName": "Mulan",
+        "imageName": "Mulan"
     },
     
     {
         "name": "Pocahontas",
-        "category": "FormerPrincess",
+        "category": "Princess-Former",
         "story": "Pocahontas",
         "channel": "Disney",
         "id": 1009,
@@ -124,12 +124,10 @@
         "link": "https://princess.disney.com/pocahontas",
         "details" : "https://disneyprincess.fandom.com/wiki/Pocahontas",
         "description": "Pocahontas is the protagonist of the film Pocahontas and its sequel, Pocahontas II, and is the first Disney Princess to have been based (loosely) on a real person, instead of a fairy tale. She is a Powhatan Native American, and she is the first Disney Princess to have two \"princes\" (John Smith and John Rolfe, though only the former is an official Disney Prince). Pocahontas is the second Princess (after Jasmine) to have her singing voice and speaking voice provided by two different voice actresses. Irene Bedard and Judy Kuhn provide the voice and singing voice of Pocahontas in both movies, respectively. Pocahontas was born as the only child of Chief Powhatan, thus giving her the title of Chieftain's Daughter. Though not royalty, she is accorded the respect of one (i.e. a princess) in the sequel and is officially regarded as a Disney Princess. Her eventual marriage to John Rolfe (a commoner) does not change her status or his.",
-        "imageName": "Pocahontas",
-    },
-    
-    {
+        "imageName": "Pocahontas"
+    },{
         "name": "Rapunzel",
-        "category": "FormerPrincess",
+        "category": "Princess-Former",
         "story": "Tangled",
         "channel": "Disney",
         "id": 1010,
@@ -140,10 +138,7 @@
         
         "description": "Rapunzel is the protagonist in the film Tangled and the short film Tangled Ever After, based on the Brothers Grimm story Rapunzel. Like Aurora, she has golden hair, was born into her title, and was removed from her parent's custody as a baby, only to be reunited in her teens. Mandy Moore provides both the speaking and singing voices for Rapunzel. She is one of the stronger-willed Princesses and her preferred weapon is a frying pan. As the only child of King Frederic and Queen Arianna of Corona, she eventually marries Eugene \"Flynn Rider\" Fitzherbert, giving him the title of Prince Consort. Upon the death or abdication of her father, Rapunzel will become Queen Regnant of Corona, while her husband will remain Prince Consort.",
         "imageName": "Rapunzel"
-    },
-    
-    
-    {
+    },{
         "name": "Snow White",
         "category": "Princess",
         "story": "Snow White and the Seven Dwarfs",
@@ -156,11 +151,9 @@
         
         "description": "Snow White, the titular character of the 1937 Disney movie Snow White and the Seven Dwarfs, is a character based on the German fairy tale \"Schneewittchen.\" Snow White has the honor of being the first Princess in the first Disney animated feature, paving the way for all subsequent princesses. Adriana Caselotti provides the voice/singing voice for Snow White. Her true love is the Prince, who is able to wake her from her eternal sleep with true love's kiss. At 14, she is the youngest of the official Disney Princesses.",
         "imageName": "Snow_White"
-    },
-    
-    {
+    },{
         "name": "Tiana",
-        "category": "Princess(UnOfficial)",
+        "category": "Princess-UnOfficial",
         "story": " The Princess and the Frog",
         "channel": "Disney",
         "id": 1012,
@@ -171,5 +164,186 @@
         
         "description": "Tiana is the protagonist in the film The Princess and the Frog. Tiana made history as the first African-American Disney Princess. Anika Noni Rose provides the voice/singing for Tiana. She is the third to be married into her title. Commoner-born, Tiana becomes Princess Consort upon her marriage to Prince Naveen, the eldest son and Heir Apparent of the King of Maldonia. She is the most modern of all princesses due to living in 1920s New Orleans and is the first American and first black princess",
         "imageName": "Tiana"
+    },{
+        "name": "Alice",
+        "category": "Princess-UnOfficial",
+        "story": " Alice in Wonderland",
+        "channel": "Disney",
+        "id": 1013,
+        "isFeatured": false,
+        "isFavorite": false,
+        "link": "https://princess.disney.com/tiana",
+        "details" : "https://disneyprincess.fandom.com/wiki/Alice",
+        
+        "description": "Alice is the protagonist of Alice in Wonderland. She is not officially a Disney Princess but has been included in some of the Disney Princess Sing-a-Longs and also in It's Not Just Make-Believe.",
+        "imageName": "Alice"
+    },{
+        "name": "Sofia",
+        "category": "Princess-UnOfficial",
+        "story": " Sofia the First",
+        "channel": "Disney",
+        "id": 1014,
+        "isFeatured": false,
+        "isFavorite": false,
+        "link": "https://en.wikipedia.org/wiki/Sofia_the_First",
+        "details" : "https://disneyprincess.fandom.com/wiki/Princess_Sofia",
+        
+        "description": "Princess Sofia is the titular protagonist of the Disney Junior animated television series, Sofia the First. She is a little girl with a commoner's background until her mother marries the King of Enchancia and became a princess. Sofia learns that looking like a princess is not all that hard, but behaving like one can come only from the heart.",
+        "imageName": "Sofia"
+    },{
+        "name": "Elsa",
+        "category": "Princess-UnOfficial",
+        "story": "Frozen",
+        "channel": "Disney",
+        "id": 1015,
+        "isFeatured": false,
+        "isFavorite": false,
+        "link": "https://disneyprincess.fandom.com/wiki/Elsa",
+        "details" : "https://frozen.fandom.com/wiki/Elsa",
+        
+        "description": "Born with the power to create ice and snow, Elsa one day accidentally hit Anna's head with her power. Feared that she would harm her family, Elsa isolated herself from the world as well as her beloved sister. Three years after the king and queen of Arendelle died, Elsa was crowned queen of Arendelle. During the coronation ceremony, her power was revealed. In fear, she ran away from the kingdom and into the mountains, where she created her own castle and dress to free herself from others.",
+        "imageName": "Elsa"
+    },{
+        "name": "Anna",
+        "category": "Princess-UnOfficial",
+        "story": "Frozen",
+        "channel": "Disney",
+        "id": 1016,
+        "isFeatured": false,
+        "isFavorite": false,
+        "link": "https://disneyprincess.fandom.com/wiki/Anna",
+        "details" : "https://frozen.fandom.com/wiki/Anna",
+        
+        "description": "Anna is the daughter of Agnarr and Iduna, younger sister of Elsa, and current queen of Arendelle. She was extremely close with Elsa, but an accident during their childhoods prompted their parents to separate them from each other and the outside world. During the long years that followed, Anna tried repeatedly to spend time with Elsa but to no avail. This isolated existence was made complete by the sudden deaths of Agnarr and Iduna, leaving Anna to truly alone.",
+        "imageName": "Anna"
+    },{
+        "name": "Nala",
+        "category": "Princess-UnOfficial",
+        "story": "The Lion King",
+        "channel": "Disney",
+        "id": 1017,
+        "isFeatured": false,
+        "isFavorite": false,
+        "link": "https://disneyprincess.fandom.com/wiki/Nala",
+        "details" : "https://hero.fandom.com/wiki/Nala_(Disney)",
+        
+        "description": "Nala is a lioness heroine in Walt Disney Pictures' The Lion King film franchise.Nala is introduced as the best friend of Simba, and ultimately becomes his wife by the end of The Lion King",
+        "imageName": "Nala"
+    },{
+        "name": "Elena",
+        "category": "Princess-UnOfficial",
+        "story": "Elena of Avalor",
+        "channel": "Disney",
+        "id": 1018,
+        "isFeatured": false,
+        "isFavorite": false,
+        "link": "https://disneyprincess.fandom.com/wiki/Princess_Elena",
+        "details" : "https://disney.fandom.com/wiki/Princess_Elena ",
+        
+        "description": "Queen Elena Castillo Flores of Avalor is the titular protagonist of the Disney animated series, Elena of Avalor. She is the oldest daughter of King Raul and Queen Lucia and the current ruler of Avalor, who, before she could become the one, learned to rule as the Crown Princess until she came of age to be named Queen.",
+        "imageName": "Elena"
+    },{
+        "name": "Amber",
+        "category": "Princess-UnOfficial",
+        "story": "Sofia the First",
+        "channel": "Disney",
+        "id": 1019,
+        "isFeatured": false,
+        "isFavorite": false,
+        "link": "https://disneyprincess.fandom.com/wiki/Princess_Amber",
+        "details" : "https://disneyprincess.fandom.com/wiki/Princess_Amber",
+        
+        "description": "Princess Amber is the deuteragonist of the Disney Junior series Sofia the First. She is the princess of Enchancia and the sister of Prince James and Princess Sofia. She is voiced by Darcy Rose Byrnes.",
+        "imageName": "Amber"
+    },{
+        "name": "Esmeralda",
+        "category": "Princess-UnOfficial",
+        "story": "The Hunchback of Notre Dame",
+        "channel": "Disney",
+        "id": 1020,
+        "isFeatured": false,
+        "isFavorite": false,
+        "link": "https://disney.fandom.com/wiki/Esmeralda",
+        "details" : "https://disneyprincess.fandom.com/wiki/Esmeralda#:~:text=Esmeralda%20is%20the%20deuteragonist%20of,character%20of%20its%202002%20sequel.",
+        
+        "description": "Esmeralda is the deuteragonist of Disney's 1996 animated feature film, The Hunchback of Notre Dame. She is a young Romani woman referred to derogatorily with the slur 'gypsy' by many characters. Esmeralda is an outspoken humanitarian, which drives her to protect the deformed bell-ringer, Quasimodo, from his oppressors—namely, Claude Frollo. This act of mercy, coupled with her beauty and cultural background, makes Esmeralda the main target of Frollo's wrath.",
+        "imageName": "Esmeralda"
+    },{
+        "name": "Bo Peep",
+        "category": "Princess-UnOfficial",
+        "story": "Toy Story",
+        "channel": "Disney",
+        "id": 1021,
+        "isFeatured": false,
+        "isFavorite": false,
+        "link": "https://pixar.fandom.com/wiki/Bo_Peep",
+        "details" : "https://disney.fandom.com/wiki/Bo_Peep",
+        
+        "description": "Bo Peep is a supporting character in the Disney•Pixar Toy Story franchise and the deuteragonist of the fourth film. She is a porcelain shepherdess figurine and Sheriff Woody's girlfriend in the films. Bo Peep and her sheep were originally adornments of Molly Davis's bedside lamp.",
+        "imageName": "Bo Peep"
+    },{
+        "name": "Faline",
+        "category": "Princess-UnOfficial",
+        "story": "Bambi",
+        "channel": "Disney",
+        "id": 1022,
+        "isFeatured": false,
+        "isFavorite": false,
+        "link": "https://disney.fandom.com/wiki/Faline",
+        "details" : "https://bambi.fandom.com/wiki/Faline",
+        
+        "description": "Faline is a female deer and one of the deuteragonists of Bambi. She is the daughter of Ena and an unknown buck. First shown as a fawn and later as a young adult doe, she is Bambi's love interest.",
+        "imageName": "Faline"
+    },{
+        "name": "Anastasia",
+        "category": "Princess-UnOfficial",
+        "story": "Bambi",
+        "channel": "Disney",
+        "id": 1023,
+        "isFeatured": false,
+        "isFavorite": false,
+        "link": "https://disney.fandom.com/wiki/Faline",
+        "details" : "https://bambi.fandom.com/wiki/Faline",
+        
+        "description": "Faline is a female deer and one of the deuteragonists of Bambi. She is the daughter of Ena and an unknown buck. First shown as a fawn and later as a young adult doe, she is Bambi's love interest.",
+        "imageName": "Faline"
+    },{
+        "name": "Eilonwy",
+        "category": "Princess-UnOfficial",
+        "story": "Bambi",
+        "channel": "Disney",
+        "id": 1024,
+        "isFeatured": false,
+        "isFavorite": false,
+        "link": "https://disney.fandom.com/wiki/Faline",
+        "details" : "https://bambi.fandom.com/wiki/Faline",
+        
+        "description": "Faline is a female deer and one of the deuteragonists of Bambi. She is the daughter of Ena and an unknown buck. First shown as a fawn and later as a young adult doe, she is Bambi's love interest.",
+        "imageName": "Faline"
+    },{
+        "name": "JanePorter",
+        "category": "Princess-UnOfficial",
+        "story": "Bambi",
+        "channel": "Disney",
+        "id": 1025,
+        "isFeatured": false,
+        "isFavorite": false,
+        "link": "https://disney.fandom.com/wiki/Faline",
+        "details" : "https://bambi.fandom.com/wiki/Faline",
+        
+        "description": "Faline is a female deer and one of the deuteragonists of Bambi. She is the daughter of Ena and an unknown buck. First shown as a fawn and later as a young adult doe, she is Bambi's love interest.",
+        "imageName": "Faline"
+    },{
+        "name": "Tinker Bell",
+        "category": "Princess-UnOfficial",
+        "story": "Bambi",
+        "channel": "Disney",
+        "id": 1026,
+        "isFeatured": false,
+        "isFavorite": false,
+        "link": "https://disney.fandom.com/wiki/Faline",
+        "details" : "https://bambi.fandom.com/wiki/Faline",
+        "description": "Faline is a female deer and one of the deuteragonists of Bambi. She is the daughter of Ena and an unknown buck. First shown as a fawn and later as a young adult doe, she is Bambi's love interest.",
+        "imageName": "Faline"
     }
 ]

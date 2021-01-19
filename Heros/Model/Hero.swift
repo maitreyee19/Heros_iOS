@@ -20,8 +20,8 @@ struct Hero: Hashable, Codable ,Identifiable{
     var category: Category
     enum Category: String, CaseIterable, Codable {
         case superHero = "Super Hero"
-        case unOfficialPrincess = "Princess(UnOfficial)"
-        case formerPrincess = "FormerPrincess"
+        case PrincessUnOfficial = "Princess-UnOfficial"
+        case PrincessFormer = "Princess-Former"
         case educational = "Kid Educational"
         case princess = "Princess"
     }

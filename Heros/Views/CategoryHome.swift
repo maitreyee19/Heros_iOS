@@ -22,7 +22,6 @@ struct CategoryHome: View {
                             CategoryRow(categoryName: key, items: modelData.categories[key]!)
                                 .padding(.leading,0)
                         }
-                        
                     }
                 }
                 .navigationTitle("Princess")

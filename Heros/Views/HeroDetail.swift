@@ -35,12 +35,18 @@ struct HeroDetailView: View {
                 .font(.subheadline)
                 .foregroundColor(.secondary)
                 Divider()
-                Text("About \(hero.name)")
-                    .font(.title2)
-                Button("Disney Link") {UIApplication.shared.open(URL(string: hero.link)!)}
+                HStack{
+                    
+                    
+                    Text("About \(hero.name)")
+                        .font(.title)
+                        .bold()
+                    Spacer()
+                    Button("Disney Link") {UIApplication.shared.open(URL(string: hero.link)!)}
+                }
                 Text(hero.description)
                     .font(.system(size: 30, weight: .light, design: .serif))
-                        .italic()
+                    .italic()
             }
             .padding()
         }

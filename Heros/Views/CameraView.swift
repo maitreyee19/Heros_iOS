@@ -23,7 +23,7 @@ struct CameraView: View {
             }){
                 VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 10) {
                     HStack{
-                        Image(uiImage: image)
+                        Image("Camera")
                         .renderingMode(.original)
                         .resizable()
                         .frame(width: 120, height: 100)

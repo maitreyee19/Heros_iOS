@@ -22,7 +22,6 @@
 		23629B4A259FE9D000308204 /* HeroDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23629B49259FE9D000308204 /* HeroDetail.swift */; };
 		23629B4F25A075F900308204 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23629B4E25A075F900308204 /* FavoriteButton.swift */; };
 		236CA00325AC41510053102D /* SelectedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236CA00225AC41510053102D /* SelectedItem.swift */; };
-		236CA01625AD55CE0053102D /* PrincessClassfier_v1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 236CA01525AD55CE0053102D /* PrincessClassfier_v1.mlmodel */; };
 		236ED8E125A25CF60039C3C8 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236ED8E025A25CF60039C3C8 /* CameraView.swift */; };
 		236ED8E625A283010039C3C8 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236ED8E525A283010039C3C8 /* ImagePicker.swift */; };
 		236ED8F425A3F5580039C3C8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236ED8F325A3F5580039C3C8 /* APIClient.swift */; };
@@ -30,6 +29,8 @@
 		23BF3C8825A1258D00BE2EFC /* CategoryHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BF3C8725A1258D00BE2EFC /* CategoryHome.swift */; };
 		23C1716525A13C3100D4EC19 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C1716425A13C3100D4EC19 /* CategoryRow.swift */; };
 		23C1716A25A13EA500D4EC19 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C1716925A13EA500D4EC19 /* CategoryItem.swift */; };
+		23DC8D6425B192A2005B2C62 /* PrincessClassfier_v1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 23DC8D6325B192A2005B2C62 /* PrincessClassfier_v1.mlmodel */; };
+		23DC8D7125B29782005B2C62 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 23DC8D7025B29782005B2C62 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +72,6 @@
 		23629B49259FE9D000308204 /* HeroDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetail.swift; sourceTree = "<group>"; };
 		23629B4E25A075F900308204 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 		236CA00225AC41510053102D /* SelectedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedItem.swift; sourceTree = "<group>"; };
-		236CA01525AD55CE0053102D /* PrincessClassfier_v1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PrincessClassfier_v1.mlmodel; sourceTree = "<group>"; };
 		236ED8E025A25CF60039C3C8 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		236ED8E525A283010039C3C8 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		236ED8F325A3F5580039C3C8 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -79,6 +79,8 @@
 		23BF3C8725A1258D00BE2EFC /* CategoryHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHome.swift; sourceTree = "<group>"; };
 		23C1716425A13C3100D4EC19 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		23C1716925A13EA500D4EC19 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		23DC8D6325B192A2005B2C62 /* PrincessClassfier_v1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = PrincessClassfier_v1.mlmodel; path = ../../PrincessClassfier_v1.mlmodel; sourceTree = "<group>"; };
+		23DC8D7025B29782005B2C62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		23629ADB259E773600308204 = {
 			isa = PBXGroup;
 			children = (
+				23DC8D7025B29782005B2C62 /* README.md */,
 				23629AE6259E773600308204 /* Heros */,
 				23629AF8259E773800308204 /* HerosTests */,
 				23629B03259E773800308204 /* HerosUITests */,
@@ -134,7 +137,7 @@
 				23629B2B259FCC6700308204 /* Views */,
 				23629AEB259E773800308204 /* Assets.xcassets */,
 				23629AF0259E773800308204 /* Info.plist */,
-				236CA01525AD55CE0053102D /* PrincessClassfier_v1.mlmodel */,
+				23DC8D6325B192A2005B2C62 /* PrincessClassfier_v1.mlmodel */,
 				236ED90025A422D00039C3C8 /* HeroClassifier 1.mlmodel */,
 				23629AED259E773800308204 /* Preview Content */,
 				23629B2F259FCD1400308204 /* Model */,
@@ -322,6 +325,7 @@
 			files = (
 				23629AEF259E773800308204 /* Preview Assets.xcassets in Resources */,
 				23629AEC259E773800308204 /* Assets.xcassets in Resources */,
+				23DC8D7125B29782005B2C62 /* README.md in Resources */,
 				23629B34259FCD9500308204 /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,9 +366,9 @@
 				23629B4A259FE9D000308204 /* HeroDetail.swift in Sources */,
 				23629B16259EAE8700308204 /* CircleImage.swift in Sources */,
 				23629B45259FD61800308204 /* HeroRowList.swift in Sources */,
+				23DC8D6425B192A2005B2C62 /* PrincessClassfier_v1.mlmodel in Sources */,
 				23C1716A25A13EA500D4EC19 /* CategoryItem.swift in Sources */,
 				23629B21259FA0B600308204 /* Hero.swift in Sources */,
-				236CA01625AD55CE0053102D /* PrincessClassfier_v1.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,7 +528,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Heros/Preview Content\"";
-				DEVELOPMENT_TEAM = 5227CBD5P4;
+				DEVELOPMENT_TEAM = YTNRN242TX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Heros/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -532,7 +536,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mdas.Heros;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdas.Princesss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -548,7 +552,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Heros/Preview Content\"";
-				DEVELOPMENT_TEAM = 5227CBD5P4;
+				DEVELOPMENT_TEAM = YTNRN242TX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Heros/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -556,7 +560,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.mdas.Heros;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdas.Princesss;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
