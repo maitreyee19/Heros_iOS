@@ -14,11 +14,15 @@ class ImagePickerCoordinator: NSObject , UINavigationControllerDelegate , UIImag
     @Binding var image : UIImage
     @Binding var showModal : Bool
     @Binding var prediction : String
+    @Binding var faceBBox : CGRect
     
-    init(image: Binding<UIImage> , showModal:Binding<Bool> , prediction :Binding<String>) {
+    
+    
+    init(image: Binding<UIImage> , showModal:Binding<Bool> , prediction :Binding<String> , faceBBox : Binding<CGRect>) {
         _image = image
         _showModal = showModal
         _prediction = prediction
+        _faceBBox = faceBBox
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -26,6 +30,7 @@ class ImagePickerCoordinator: NSObject , UINavigationControllerDelegate , UIImag
             image = uiImage
             showModal = false
             print("New Image picked, Lets call the service to get the character detail")
+            faceDetaction(image: CIImage(image: image)!)
             let config = MLModelConfiguration()
             config.computeUnits = .all
             do{
@@ -43,7 +48,40 @@ class ImagePickerCoordinator: NSObject , UINavigationControllerDelegate , UIImag
             
         }
     }
-
+    
+    /**
+     face dection request
+     */
+    func faceDetaction(image: CIImage) {
+        
+        print("Finding the face...")
+        let config = MLModelConfiguration()
+        config.computeUnits = .all
+        
+        let faceDetectionReqeust = VNDetectFaceRectanglesRequest(){ (vnrequest, error) in
+            if let results = vnrequest.results as? [VNFaceObservation] {
+                DispatchQueue.main.async {
+                    for observation in results{
+                        self.faceBBox = observation.boundingBox
+                        self.faceBBox.origin.x *= 120
+                        self.faceBBox.origin.y = (1-self.faceBBox.origin.y) * 100
+                        self.faceBBox.size.width *= 120
+                        self.faceBBox.size.height *= -100
+                        print(self.faceBBox)
+                    }
+                }
+            }
+        }
+        let handler = VNImageRequestHandler(ciImage: image)
+        DispatchQueue.global(qos: .userInteractive).async {
+            do {
+                try handler.perform([faceDetectionReqeust])
+            } catch {
+                print("Err :( \(error)")
+            }
+        }
+    }
+    
 }
 
 struct ImagePicker:UIViewControllerRepresentable {
@@ -55,6 +93,7 @@ struct ImagePicker:UIViewControllerRepresentable {
     var sourceType: UIImagePickerController.SourceType = .camera
     @Binding var showModal:Bool
     @Binding var prediction:String
+    @Binding var faceBBox:CGRect
     
     func makeUIViewController(context: UIViewControllerRepresentableContext<ImagePicker>) -> UIImagePickerController {
         let picker = UIImagePickerController();
@@ -68,7 +107,7 @@ struct ImagePicker:UIViewControllerRepresentable {
     }
     
     func makeCoordinator() -> ImagePicker.Coordinator {
-        return ImagePickerCoordinator(image: $image , showModal:$showModal , prediction: $prediction)
+        return ImagePickerCoordinator(image: $image , showModal:$showModal , prediction: $prediction , faceBBox: $faceBBox)
     }
 }
 
@@ -104,69 +143,3 @@ func resizeImage(inputImage : UIImage) -> UIImage?{
     return newImage
 }
 
-
-func recognizeImage(image: CIImage) {
-    
-    print("I'm investigating...")
-    print(image)
-    let config = MLModelConfiguration()
-    config.computeUnits = .all
-    if let model = try? VNCoreMLModel(for: HeroClassifier_1(configuration: config).model) {
-        
-        let request = VNCoreMLRequest(model: model) { (vnrequest, error) in
-            
-            if let results = vnrequest.results as? [VNClassificationObservation] {
-                print("Going to process results")
-                let topResult = results.first
-                DispatchQueue.main.async {
-                    let confidenceRate = (topResult?.confidence)! * 100
-                    let rounded = Int (confidenceRate * 100) / 100
-                    print("\(rounded)% it's \(topResult?.identifier ?? "Anonymous")")
-                }
-            }
-        }
-        let handler = VNImageRequestHandler(ciImage: image)
-        DispatchQueue.global(qos: .userInteractive).async {
-            do {
-                try handler.perform([request])
-            } catch {
-                print("Err :( \(error)")
-            }
-        }
-    }
-}
-
-
-
-import UIKit
-
-extension UIImage {
-    func toCVPixelBuffer() -> CVPixelBuffer? {
-        let attrs = [kCVPixelBufferCGImageCompatibilityKey: kCFBooleanTrue, kCVPixelBufferCGBitmapContextCompatibilityKey: kCFBooleanTrue] as CFDictionary
-        var pixelBuffer : CVPixelBuffer?
-        let status = CVPixelBufferCreate(kCFAllocatorDefault, Int(self.size.width), Int(self.size.height), kCVPixelFormatType_32ARGB, attrs, &pixelBuffer)
-        guard status == kCVReturnSuccess else {
-            return nil
-        }
-        
-        if let pixelBuffer = pixelBuffer {
-            CVPixelBufferLockBaseAddress(pixelBuffer, CVPixelBufferLockFlags(rawValue: 0))
-            let pixelData = CVPixelBufferGetBaseAddress(pixelBuffer)
-            
-            let rgbColorSpace = CGColorSpaceCreateDeviceRGB()
-            let context = CGContext(data: pixelData, width: Int(self.size.width), height: Int(self.size.height), bitsPerComponent: 8, bytesPerRow: CVPixelBufferGetBytesPerRow(pixelBuffer), space: rgbColorSpace, bitmapInfo: CGImageAlphaInfo.noneSkipFirst.rawValue)
-            
-            context?.translateBy(x: 0, y: self.size.height)
-            context?.scaleBy(x: 1.0, y: -1.0)
-            
-            UIGraphicsPushContext(context!)
-            self.draw(in: CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height))
-            UIGraphicsPopContext()
-            CVPixelBufferUnlockBaseAddress(pixelBuffer, CVPixelBufferLockFlags(rawValue: 0))
-            
-            return pixelBuffer
-        }
-        
-        return nil
-    }
-}

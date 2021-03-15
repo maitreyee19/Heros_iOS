@@ -11,10 +11,12 @@ struct CameraView: View {
     @State private var showSheet:Bool = false
     @State private var showImagePicker = false
     @State private var charactorName = ""
-    @State private var image:UIImage  = UIImage(systemName:"camera.on.rectangle")!
+    //    @State private var image:UIImage  = UIImage(systemName:"camera.on.rectangle")!
+    @State private var image:UIImage  = UIImage(imageLiteralResourceName: "Camera")
     @State private var sourceType :UIImagePickerController.SourceType = .camera
+    @State private var overlayRect = CGRect(x: 0, y: 0, width: 100, height: 100)
     
-    
+     
     var body: some View {
         
         HStack{
@@ -23,11 +25,15 @@ struct CameraView: View {
             }){
                 VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 10) {
                     HStack{
-                        Image("Camera")
-                        .renderingMode(.original)
-                        .resizable()
-                        .frame(width: 120, height: 100)
-                        .cornerRadius(5)
+                        Image(uiImage: image)
+                            .renderingMode(.original)
+                            .resizable()
+                            .frame(width: 120, height: 100)
+                            .cornerRadius(5)
+                            .overlay(Rectangle()
+                                        .path( in : overlayRect)
+                                        .stroke(Color.red , lineWidth: 2)
+                            )
                     }
                     Text("Select Picture")
                 }
@@ -47,7 +53,7 @@ struct CameraView: View {
                                             .cancel()])}
             )
             .sheet(isPresented: $showImagePicker, content: {
-                ImagePicker(image: self.$image, sourceType: self.sourceType , showModal: self.$showImagePicker , prediction: $charactorName)
+                ImagePicker(image: self.$image, sourceType: self.sourceType , showModal: self.$showImagePicker , prediction: $charactorName , faceBBox: $overlayRect)
             })
             
             if(charactorName != ""){
@@ -59,6 +65,6 @@ struct CameraView: View {
 
 struct CameraView_Previews: PreviewProvider {
     static var previews: some View {
-        CameraView()
+        return CameraView()
     }
 }

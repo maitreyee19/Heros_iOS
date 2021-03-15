@@ -31,6 +31,7 @@
 		23C1716A25A13EA500D4EC19 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C1716925A13EA500D4EC19 /* CategoryItem.swift */; };
 		23DC8D6425B192A2005B2C62 /* PrincessClassfier_v1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 23DC8D6325B192A2005B2C62 /* PrincessClassfier_v1.mlmodel */; };
 		23DC8D7125B29782005B2C62 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 23DC8D7025B29782005B2C62 /* README.md */; };
+		23DC8D7625B6C593005B2C62 /* UIImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DC8D7525B6C593005B2C62 /* UIImageHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		23C1716925A13EA500D4EC19 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		23DC8D6325B192A2005B2C62 /* PrincessClassfier_v1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = PrincessClassfier_v1.mlmodel; path = ../../PrincessClassfier_v1.mlmodel; sourceTree = "<group>"; };
 		23DC8D7025B29782005B2C62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		23DC8D7525B6C593005B2C62 /* UIImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 			children = (
 				236ED8E525A283010039C3C8 /* ImagePicker.swift */,
 				236ED8F325A3F5580039C3C8 /* APIClient.swift */,
+				23DC8D7525B6C593005B2C62 /* UIImageHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23C1716525A13C3100D4EC19 /* CategoryRow.swift in Sources */,
+				23DC8D7625B6C593005B2C62 /* UIImageHelper.swift in Sources */,
 				236CA00325AC41510053102D /* SelectedItem.swift in Sources */,
 				23629AEA259E773600308204 /* ContentView.swift in Sources */,
 				236ED8E125A25CF60039C3C8 /* CameraView.swift in Sources */,
